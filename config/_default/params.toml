@@ -46,19 +46,19 @@ showReadingTime = true
 
 [social_media]
   [[social_media.items]]
-    enabled = false
+    enabled = true
     title = 'Facebook'
     icon = 'brand-facebook'
     link = 'https://www.facebook.com/'
 
   [[social_media.items]]
-    enabled = false
+    enabled = true
     title = 'Twitter'
     icon = 'brand-x'
     link = 'https://twitter.com/__PurPleFoX__'
 
   [[social_media.items]]
-    enabled = false
+    enabled = true
     title = 'Instagram'
     icon = 'brand-instagram'
     link = 'https://www.instagram.com/'
