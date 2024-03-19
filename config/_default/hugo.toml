@@ -1,9 +1,9 @@
 baseURL = 'https://mark199317.github.io/blow/'
-title = 'My New Hugo Site'
-author = ""
-copyright = ""
-languageCode = 'en'
-defaultContentLanguage = "en"
+title = 'Name Site'
+author = "Admin"
+copyright = "url-site"
+languageCode = 'ru'
+defaultContentLanguage = "ru"
 hasCJKLanguage = true
 enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
