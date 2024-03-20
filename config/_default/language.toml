@@ -1,11 +1,5 @@
 [ru]
-languageCode = 'ru-RU'
+languageCode = 'ru'
 languageDirection = 'ltr'  # Направление текста (ltr - слева направо)
 languageName = 'Russian'  # Название языка
 weight = 1  # Вес языка (порядок отображения, чем ниже значение, тем раньше отображается)
-
-[en]
-languageCode = 'en-US'
-languageDirection = 'ltr'
-languageName = 'English'
-weight = 3
