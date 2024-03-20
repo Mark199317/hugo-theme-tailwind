@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-{{ with .Site.Language }}
-  <html lang="{{ .LanguageCode }}" dir="{{ .LanguageDirection }}"> <!-- Используем .LanguageCode без проверки -->
-{{ end }}
+<html lang="{{ or site.LanguageCode }}">
 
 <head>
   {{ block "title" . }}
