@@ -25,13 +25,6 @@
 
     <article class="mt-6 w-full max-w-4xl lg:max-w-5xl prose prose-slate dark:prose-invert prose-quoteless post-content">
       {{ .Content | safeHTML }}
-      {{ if isset site.Language.LanguageCode . }}
-    <!-- Выводим сообщение, если site.Language.LanguageCode определен -->
-    <p>Языковой код определен: {{ site.Language.LanguageCode }}</p>
-{{ else }}
-    <!-- Выводим сообщение, если site.Language.LanguageCode не определен -->
-    <p>Языковой код не определен</p>
-{{ end }}
     </article>
     
 

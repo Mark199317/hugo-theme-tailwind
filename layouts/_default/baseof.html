@@ -2,21 +2,12 @@
 <html lang="ru-RU">
 <head>
   {{ block "title" . }}
-    {{- $title := "" -}}
-    {{- $siteTitle := $.Site.Title -}}
-    {{- $subtitle := $.Site.Params.Subtitle -}}
-    {{- $mainTitle := $siteTitle -}}
-    {{- if $subtitle -}}
-      {{- $mainTitle = printf "%s - %s" $siteTitle $subtitle -}}
-    {{- end -}}
-
-    {{- if .IsHome -}}
-      {{- $title = $mainTitle -}}
-    {{- else -}}
-      {{- $title = printf "%s :: %s" .Title $mainTitle -}}
-    {{- end -}}
-    <title>{{- $title -}}</title>
-  {{ end }}
+  {{- $title := .Title -}}
+  {{- if not .IsHome -}}
+    {{- $title = printf "%s :: %s" .Title $.Site.Title -}}
+  {{- end -}}
+  <title>{{- $title -}}</title>
+{{ end }}
   {{ partial "head.html" . }}
   {{ block "head" . }}{{ end }}
 </head>

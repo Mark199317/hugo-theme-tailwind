@@ -18,11 +18,11 @@ showReadingTime = true
   threshold = 0.3 # https://www.fusejs.io/api/options.html#threshold
 
 [header]
-  logo = "https://placehold.co/512/webp"
+  logo = "favicon.ico"
   sticky = false
 
 [footer]
-  since = 2023
+  since = 2024
   poweredby = true
 
 [taxonomies.icons]
