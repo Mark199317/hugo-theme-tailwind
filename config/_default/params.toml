@@ -18,7 +18,7 @@ showReadingTime = true
   threshold = 0.3 # https://www.fusejs.io/api/options.html#threshold
 
 [header]
-  logo = "favicon.ico"
+  logo = "favico.png"
   sticky = false
 
 [footer]
