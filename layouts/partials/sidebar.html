@@ -11,14 +11,13 @@
   </form>
 </section>
 
+<div class="pl-6 mt-6 w-full max-w-4xl lg:max-w-5xl">
+  <a href="https://hostiq.ua/clients/aff.php?aff=7159&bid=116" rel="nofollow"><img src="https://hostiq.ua/images/aff-banners/blog_hosting_300x250.png" width="300" height="250" alt="" title="" border="0"/></a>
+</div>
+
 {{ range $taxonomy, $terms := site.Taxonomies }}
   {{ if $terms }}
-  {{ partial "block/sidebar_section.html" (dict "Context" $terms "Taxonomy" $taxonomy "Limit" 10) }}
+  {{ partial "block/sidebar_section.html" (dict "Context" $terms "Taxonomy" $taxonomy "Limit" 3) }}
   {{ end }}
 {{ end }}
 
-<center>
-
-  <a href="https://hostiq.ua/clients/aff.php?aff=7159&bid=116" rel="nofollow"><img src="https://hostiq.ua/images/aff-banners/blog_hosting_300x250.png" width="300" height="250" alt="" title="" border="0"/></a>
-
-</center>
