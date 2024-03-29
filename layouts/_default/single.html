@@ -27,7 +27,9 @@
     </article>
     <div class="sharethis-inline-share-buttons"></div>
     {{ partial "sharethis_buttons.html" }}
+    {{ if not .Params.noComment }}
     {{ partial "comments.html" . }}
+    {{ end }}
   </div>
 </div>
 {{ end }}
