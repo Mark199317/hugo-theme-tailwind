@@ -4,7 +4,6 @@
   {{ range .Site.Menus.footer }}
   <a href="{{ .URL }}">{{ .Name }}</a>
   {{ end }}
-  {{ partial "yandex-iks.html" . }}
   </div>
   <div class="grow"></div>
   <div class="flex flex-row">
@@ -49,9 +48,8 @@
     "theme": "edgeless",
     "position": "bottom-right",
     "content": {
-        "message": "Данный сайт использует cookies для Google Analytics, Яндекс Метрика, Disqus для улучшения контента. Сайт не собирает и не передает никакие личные данные.",
+        "message": "Данный сайт использует cookies для Google Analytics, Яндекс Метрика, Disqus чтобы улучшить контент. Сайт не собирает и не передает никакие личные данные.",
     "href": "https://www.cookiesandyou.com/"
-    "button": "Подтверждаю"
     }
   });
   </script>
