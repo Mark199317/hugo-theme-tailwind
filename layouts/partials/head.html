@@ -13,12 +13,12 @@
 <meta name="robots" content="index, follow" />
 <meta name="verify-admitad" content="4508283108" />
 <meta name="yandex-verification" content="f4c3693f52d2f77f" />
+<link rel="icon" href="https://youprogress.info/favicon.ico" type="image/x-icon" />
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 
 <link rel="canonical" href="{{ .Permalink }}" />
 
-<link rel="shortcut icon" href="{{ .Site.BaseURL }}snowy-owl.png" type="image/png">
 {{ partialCached "css.html" . }}
 
 {{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}

@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
-  {{ block "title" . }}
-  {{- $title := .Title -}}
-  {{- if not .IsHome -}}
-    {{- $title = printf "%s :: %s" .Title $.Site.Title -}}
-  {{- end -}}
-  <title>{{- $title -}}</title>
-{{ end }}
   {{ partial "head.html" . }}
-  {{ block "head" . }}{{ end }}
   {{ partial "metrika.html" . }}
 </head>
 <body class="flex flex-col min-h-screen w-full bg-slate-50 dark:bg-gray-800">
@@ -17,7 +9,9 @@
     {{ partial "header.html" . }}
   </header>
   <main class="flex flex-auto justify-center">
-    {{ block "main" . }}{{ end }}
+    
+    {{ block "main" . }}
+    {{ end }}
   </main>
   <footer class="flex flex-none justify-center">
     {{ partial "footer.html" . }}
