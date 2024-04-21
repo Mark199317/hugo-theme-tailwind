@@ -33,10 +33,12 @@
       {{ end }}
       
       {{ .Content | safeHTML }}
-  
+      
+      {{ if not .Params.disable_banner }}
       <center>
       <a href="/health/top15/top15/" class="custom-link" title="Подборка ТОП 15"> 🎁 ТОП-15 ПРОДУКТОВ ДЛЯ ЗДОРОВЬЯ ПО СУПЕР ЦЕНАМ  </a>
       </center>
+      {{ end }}
       
     </article>
     <div class="sharethis-inline-share-buttons"></div>
